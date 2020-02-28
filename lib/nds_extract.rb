@@ -123,10 +123,15 @@ def movies_with_directors_set(source)
   
   arr = []
   i = 0 
+<<<<<<< HEAD
   while i < source.length do
     director_name = source[i][:name]
     movie_set = source[i][:movies]
     arr << movies_with_director_key(director_name, movie_set)
+=======
+  while i < source.length do 
+    arr << movie_with_director_name(director_name, movie_data)
+>>>>>>> 587dc34597dce2f1a344a76d781c18c5931d55dd
     i += 1 
   end
   
